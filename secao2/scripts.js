@@ -1,3 +1,20 @@
+/* Seção 2 – Variáveis em JavaScript
+
+    O que você vai aprender agora:
+
+    O que são variáveis
+
+    Como criar variáveis em JavaScript
+
+    Quais palavras-chave usar: let, const, var
+
+    Boas práticas
+
+    Aplicação prática dentro do contexto do Tribal Wars
+
+    Exercícios ao final
+*/
+
 /*
   1 - Crie uma variável chamada jogador e armazene seu nome nela. 
 */
