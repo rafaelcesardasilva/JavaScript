@@ -14,7 +14,6 @@
 
     Exercícios ao final
 */
-
 /*
   1 - Crie uma variável chamada jogador e armazene seu nome nela. 
 */
