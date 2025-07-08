@@ -23,7 +23,16 @@
                 variavel.toString() -> também converte para string
             -Boolean(variavel) -> verifica se tem um valor na variavel retornando true ou false como uma forma de conversão    
             -Number(variavel) -> converte uma valor de string em numero 
-        
+        .Array -> Um array é uma estrutura de dados que armazena vários valores
+                  em uma única variável.  
+            -listaB = [...listaA] -> permite fazer uma copia da lista anterior sem precisar
+                      alterar o valor da primeira lista quando for manipualr os dados        
+        .Objeto -> Um objeto é uma estrutura que permite organizar dados com pares 
+                   chave: valor (também chamados de propriedades).
+            -delete chave.valor -> usado para deletar o objeto    
+            -in (valor in chave) -> usado para verificar se existi um valor dentro do objeto                  
+            -objB = {..objA} -> permite fazer uma copia do objeto anterior sem precisar
+                    alterar o valor da primeira lista quando for manipualr os dados 
 
 */
 //--------------------------------------------------------------------------------------------------
@@ -87,7 +96,7 @@
 // console.log(`Cidade: ${cidade}\nPopulação: ${populacao} milhões de habitantes`);
 // console.log('-------------------');
 // console.table({ nome, idade, isStudent });
-
+//--------------------------------------------------------------------------------------------------
 /*
     Exercício 9: Você tem um produto que custa R$ 200,00 e recebeu um desconto de R$ 40,00.
     Além disso, há um imposto de R$ 12,00 sobre o preço com desconto. Calcule o preço final do
@@ -157,9 +166,91 @@
     Exemplo de Saída: “'O produto está disponível e tem quantidade suficiente: false” e “'O
     produto está indisponível: false”
 */
-let produtoDisponivel = true;
-let produtoEstoque = 10;
-let quantidadeMinimaEstoque = 15;
-console.log(
-  `O produto está disponível e tem quantidade suficiente: ${produtoDisponivel}`
-);
+// let produtoDisponivel = true;
+// let produtoEstoque = 10;
+// let quantidadeMinimaEstoque = 15;
+
+// let quantidadeSuficiente = produtoEstoque >= produtoDisponivel;
+// let produtoDisponivelSuficiente = produtoDisponivel && quantidadeSuficiente;
+
+// console.log(
+//   `O produto está disponível e tem quantidade suficente: ${produtoDisponivelSuficiente}`
+// );
+//--------------------------------------------------------------------------------------------------
+/*
+    Exercício 14: Manipulação de Array- parte 1
+    a. Crie um array chamado produtos contendo três nomes de produtos.
+    b. Acesse e imprima o segundo produto.
+    c. Modifique o terceiro produto para "Notebook" e imprima o array atualizado.
+*/
+// let produtos = ['Arroz', 'Feijão', 'Linguiça'];
+// console.log(produtos[1]);
+// produtos[2] = 'Notebook';
+// console.table(produtos);
+/*
+    Exercício 15: Manipulação de Array- parte 2
+    a. Crie um array chamado clientes contendo três nomes de clientes.
+    b. Adicione um quarto cliente ao array.
+    c. Remova o último cliente e imprima o array atualizado.
+*/
+// let clientes = ['Rafael', 'Vanessa', 'Eduardo'];
+// clientes[3] = 'Leticia';
+// console.log(clientes);
+// clientes.pop();
+// console.log(clientes);
+/*
+    Exercício 16: Manipulação de Objetos- parte 1
+    a. Crie um objeto chamado produto com as propriedades nome, preco e quantidade.
+    b. Acesse e imprima o nome do produto.
+    c. Modifique o preço do produto e imprima o objeto atualizado.
+*/
+// let produtos = {
+//   nome: 'Arroz',
+//   preco: 18.9,
+//   quantidade: 2,
+// };
+// console.log(produtos);
+// produtos.preco = 20.0;
+// console.log(produtos);
+
+/*
+    Exercício 17: Manipulação de Objetos- parte 2
+    a. Crie um objeto chamado venda com as propriedades cliente, produto e valor.
+    b. Adicione a propriedade data ao objeto.
+    c. Remova a propriedade produto e imprima o objeto atualizado. 
+*/
+// const venda = {
+//   cliente: 'Rafael',
+//   produto: 'Frango',
+//   valor: 12.99,
+// };
+// venda.data = '22/08';
+// delete venda.produto;
+// console.log(venda);
+/*
+    Exercício 18: Manipulação dos Tipos Referências
+    a. Crie um array estoque e atribua seus valores para um novo array novoEstoque.
+    b. Modifique um elemento de novoEstoque e mostre que estoque não foi alterado.
+    c. Crie um objeto funcionario e atribua seus valores para um novo objeto
+    novoFuncionario.
+    d. Modifique uma propriedade de novoFuncionario e mostre que funcionario não foi
+    alterado.
+*/
+// const estoque = ['Arroz', 'Feijão'];
+// const novoEstoque = [...estoque];
+
+// novoEstoque[0] = 'Macarrão';
+
+// console.log(estoque);
+// console.log(novoEstoque);
+
+// console.log('--------------------------');
+
+// const funcionario = {
+//   nome: 'Joao',
+//   idade: 2025,
+// };
+// console.log(funcionario);
+// const novoFuncionario = { ...funcionario };
+// novoFuncionario.idade = 18;
+// console.log(novoFuncionario);
