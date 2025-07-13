@@ -43,3 +43,4 @@
 // console.log(array);
 // array.splice(array.indexOf('sofá'), 1);
 // console.log(array);
+//
