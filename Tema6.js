@@ -1,5 +1,21 @@
 /*
-    TEMA 6: ESTRUTURAS CONDICIONAIS E REPETIÇÃO
+    TEMA 6: ESTRUTURAS CONDICIONAIS IF/ELSE
+        .if(condição){
+            executa se a condição for verdadeira
+        }else {
+            executa se for falta 
+        }
+        .if(condição1){
+            se for verdade, executa aqui
+        }else if(condição2){
+            se cond1 for falsa e cond2 for verdadeira
+        }else {
+            se nenhuma for verdadeira    
+        }
+        .Operadores de comparação 
+            ( ==, ===, !=, <, <=, >, >= )
+        .Operadores lógicos
+            ( &&, ||, ! )
     
     METODOS ARRAYS PARA LEMBRAR
         .push() -> adiciona item no final 
