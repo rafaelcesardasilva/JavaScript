@@ -16,7 +16,17 @@
             ( ==, ===, !=, <, <=, >, >= )
         .Operadores lógicos
             ( &&, ||, ! )
-    
+
+    SWITCH/CASE
+        switch(variavel){
+            case valor:
+                bloco de código se variavel === valor
+                break;
+            default: 
+                se nenhum dos casos acima bater
+        }
+        
+
     METODOS ARRAYS PARA LEMBRAR
         .push() -> adiciona item no final 
         .pop() -> remove o ultimo item
